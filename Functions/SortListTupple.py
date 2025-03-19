@@ -9,7 +9,17 @@ def bbl_sort(tup):
                 tup[j], tup[j+1] = tup[j+1], tup[j]
     
 tup = [(3,'Santino'), (1, 'Vito'), (4, 'Fredo'), (10,'Tessio'), (7,'Connie'), (9,'Clemenza'), (2, 'Michael')]
-
 bbl_sort(tup)
 
+
+
 print(tup)
+
+
+
+tup1 = [(3,'Santino'), (1, 'Vito'), (4, 'Fredo'), (10,'Tessio'), (7,'Connie'), (9,'Clemenza'), (2, 'Michael')]
+def sort_order(each_element):
+    return each_element[0]
+
+tup1.sort(key=sort_order)
+print(tup1)
